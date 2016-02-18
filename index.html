@@ -13,7 +13,7 @@
 
 	<link rel="stylesheet" href="css/icomoon.css" media="screen" />
 	<link rel="stylesheet" href="css/magnificpopup.css" media="screen" />
-	<link rel="stylesheet" href="style.css" media="screen" />  
+	<link rel="stylesheet" href="style.css" media="screen" /> 
 
 	<!-- Fixing Internet Explorer ______________________________________-->
 	<!--[if lt IE 9]>
@@ -22,7 +22,7 @@
 	<![endif]-->
 
 </head>
-<body class="home fullscreen">
+<body class="fullscreen">
 
 	<!-- Loader _______________________________-->
 	<div class="loadreveal"></div>
@@ -55,13 +55,13 @@
 				</div>
 				<div id="menu">
 					<ul>
-						<li class="current-menu-item menu-item-has-children"><a href="#">Home</a>
-							<ul class="sub-menu">
+						<li class="current-menu-item menu-item-has-children"><a href="index.html">Home</a>
+						<!-- <ul class="sub-menu">
 								<li><a href="index.html">Fullscreen Image</a></li>
 								<li><a href="gallery-fullscreen.html">Fullscreen Gallery</a></li>
 								<li><a href="gallery-fullscreen-kenburns.html">Fullscreen KenBurns</a></li>
 								<li><a href="gallery-fullscreen-video.html">Fullscreen Video</a></li>
-							</ul>
+							</ul> -->
 						</li>
 						<li class="menu-item-has-children"><a href="#">Galleries</a>
 							<ul class="sub-menu">
@@ -98,42 +98,51 @@
 	
 	<!-- MAIN CONTENT SECTION  _____________________________________________-->
 	<section id="content" role="main">
-
-		<!-- <div class="featured-image-header">
-				<img src="http://static2.bigstockphoto.com/thumbs/4/3/6/large2/63449344.jpg"  alt="" />
-			</div>
-
 		<div class="wrapper">
 			<!-- WYSIWYG -->
-			<div class="gallery fullscreen-gallery">
-				<figure class="post format-gallery gallery-item horizontal">
+			
+			<div class="position-absolute">
+				<h2 class="big no-margin"><strong>SP FOTOGRAFIA</strong></h2>
+				<h2>Retrato & Paisajes</h2> <br/>
+			</div>
+			
+			<div class="gallery fullscreen-gallery kenburns-gallery">
+
+				<canvas id="kenburns"></canvas>
+				
+				<figure class="gallery-item landscapes">
 					<header class='gallery-icon'>
-						<img src="imgs/photography/fullscreen01.jpg" alt="" />
-						<h1>PROXIM</h1>
+						<a href="#"><img src="imgs/photography/fullscreen01.jpg"  alt="main1" /></a>
 					</header>	
 					<figcaption class='gallery-caption'>
 						<div class="entry-summary">
-							<h2 class="big no-margin"><strong>SP FOTOGRAFIA</strong></h2>
-							<h2>Retrato & Paisajes</h2><br />
-							<div class="blog-oneline-carousel">
-								<h3>Reciente</h3>
-								<div class="viewport">
-									<ul class="overview">
-										<li><p>12/08 &nbsp; Our current exhibition in Prague now open <a href="#">Read more</a></p></li>
-										<li><p>11/08 &nbsp; We had great success at Carnegie Hall <a href="#">Read more</a></p></li>
-									</ul>
-								</div>
-							</div>
+								<h3>PROXIMAMENTE</h3>
 						</div>
+							
+						
 					</figcaption>
 				</figure>
-			</div>
 
-			
+				<figure class="gallery-item landscapes">
+					<header class='gallery-icon'>
+						<a href="#"><img src="imgs/photography/fullscreen02.jpg"  alt="main1" /></a>
+					</header>
+				</figure>				
+
+				<figure class="gallery-item landscapes">
+					<header class='gallery-icon'>
+						<a href="#"> <img src= "imgs/photography/fullscreen03.jpg"alt="main1" /></a>
+					</header>	
+				</figure>
+
+				
+			</div>
 			<!-- END WYSIWYG -->
 			
 		</div><!-- END .wrapper -->
+		
 	</section>
+
 
 
 	<footer id="footer" role="contentinfo">
@@ -147,18 +156,16 @@
 <!-- Javascripts ______________________________________-->
 <script src="js/jquery.min.js"></script> 
 <script src="js/retina.min.js"></script> 
-<!-- include Masonry -->
-<script src="js/isotope.pkgd.min.js"></script> 
 <!-- include image popups -->
 <script src="js/jquery.magnific-popup.min.js"></script> 
 <!-- include mousewheel plugins -->
 <script src="js/jquery.mousewheel.min.js"></script>
-<!-- include carousel plugins -->
-<script src="js/jquery.tinycarousel.min.js"></script>
+<!-- include gallery cycle plugin -->
+<script src="js/jquery.cycle.min.js"></script>
+<!-- include kenburns plugins -->
+<script src="js/kenburns.min.js"></script>
 <!-- include svg line drawing plugin -->
 <script src="js/jquery.lazylinepainter.min.js"></script>
-
-
 <!-- include custom script -->
 <script src="js/scripts.js"></script>
 
